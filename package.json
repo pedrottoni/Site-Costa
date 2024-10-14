@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "install": "rm -rf node_modules/ && rm package-lock.json yarn.lock && npm cache clean --force && npm install && npm update"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
