@@ -1,0 +1,41 @@
+---
+interface Props {
+  title: string;
+  size?: string;
+  color?: string;
+  link?: string;
+}
+
+const { title, size, color, link } = Astro.props;
+---
+
+<a href={link} class={`btn btn-${color} btn-${size}`}>{title}</a>
+
+<style>
+  .btn {
+    display: inline-block;
+    width: fit-content;
+    padding: clamp(16px, 1svw, 24px) clamp(24px, 2svw, 40px);
+    background-color: var(--accent-light);
+    font-size: clamp(18px, 1svw, 28px);
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    border: .12svw solid transparent;
+    border-radius: 100rem;
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    background-color: var(--accent-darker);
+    border: .12svw solid var(--accent-light);
+    color: var(--lighter);
+  }
+  .btn-big {
+    @apply bg-blue-500 text-white;
+  }
+  .btn-secondary {
+    @apply bg-gray-200 text-black;
+  }
+</style>

@@ -1,0 +1,130 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Costa-assessoria contábil</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  :root {
+    --timing-100: 100ms;
+    --accent: hsl(187, 61%, 39%);
+    --accent-light: hsl(78, 100%, 70%);
+    --accent-dark: hsl(116, 26%, 55%);
+    --accent-darker: hsl(185, 70%, 13%);
+    --accent-contrast: #e39254;
+    --accent-gradient: linear-gradient(
+      45deg,
+      var(--accent-light) 30%,
+      var(--light) 60%
+    );
+    --accent-gradient-dark: linear-gradient(
+      -15deg,
+      hsl(116, 26%, 55%),
+      hsl(187deg 60% 39.22%) 100%
+    );
+    --dark: hsl(223, 16%, 16%);
+    --darker: hsl(223, 16%, 6%);
+    --light: hsl(223, 16%, 91%);
+    --lighter: hsl(223, 16%, 95%);
+    --gray: hsl(223, 16%, 84%);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :root {
+      --timing: linear;
+    }
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: normal;
+  }
+  html {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: var(--light);
+  }
+  h1 {
+    font-size: clamp(48px, 3.8svw, 100px);
+    font-weight: 600;
+    line-height: 0.7;
+  }
+  h2 {
+    font-size: clamp(38px, 2.8svw, 80px);
+    font-weight: 600;
+    line-height: 1.1;
+  }
+  h3 {
+    font-size: clamp(28px, 1.8svw, 48px);
+    font-weight: 700;
+    letter-spacing: -0.01svw;
+  }
+  p {
+    font-size: clamp(18px, 1svw, 32px);
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    color: hsl(0, 0%, 28%);
+  }
+  .subtitle {
+    font-size: clamp(18px, 1.4svw, 42px);
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    color: hsl(0, 0%, 28%);
+  }
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  }
+  .slider-dots {
+    margin-top: 2svw;
+    text-align: center;
+  }
+  .slider-dots span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background-color: var(--accent);
+    margin: 10px 4px;
+    cursor: pointer;
+    opacity: 0.25;
+  }
+
+  .slider-dots span.active {
+    opacity: 0.75;
+  }
+  .hidden {
+    display: none;
+  }
+</style>

@@ -1,0 +1,622 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Button from "../components/Button.astro";
+import Slide from "../components/Slide.astro";
+---
+
+<Layout title="Costa assessoria contábil">
+  <nav>
+    <a href="#hero">
+      <img class="logo" src="/logo dark.svg" alt="Logo Costa" />
+    </a>
+    <div class="nav-links">
+      <a href="#benefits">Serviços</a>
+      <a href="#business">Negócios</a>
+      <a href="#contact">Contato</a>
+      <a href="#testimonials">Depoimentos</a>
+      <a href="#certificado">Certificado</a>
+    </div>
+  </nav>
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <h1>
+          Nosso plano de negócios <br />
+          <span class="text-gradient">é o sucesso da sua empresa</span>
+        </h1>
+        <p class="instructions">
+          A contabilidade que sua empresa <strong>precisa</strong>, com a
+          segurança que ela
+          <strong>merece.</strong>
+        </p>
+        <Button title="Get Started" link="https://astro.build" />
+      </div>
+      <img src="/capa.png" alt="Astro logo" />
+    </section>
+    <section id="partners" class="partners">
+      <img class="logo" src="/parceiros 01.png" alt="Astro logo" />
+      <img class="logo" src="/parceiros 02.png" alt="Astro logo" />
+      <img class="logo" src="/parceiros 03.png" alt="Astro logo" />
+      <img class="logo" src="/parceiros 04.png" alt="Astro logo" />
+      <img class="logo" src="/parceiros 05.png" alt="Astro logo" />
+    </section>
+    <section id="benefits" class="benefits">
+      <h2>
+        Descomplique o seu negócio. <span class="text-gradient-dark"
+          >Agora!</span
+        >
+      </h2>
+      <ul role="list" class="link-card-grid">
+        <Card
+          img="/assessoria trabalhista.svg"
+          href="https://docs.astro.build/"
+          title="Assessoria Trabalhista"
+          body="Assessoria e consultoria trabalhista como foco em operações operacionais na área de Recursos Humanos."
+        />
+        <Card
+          img="/consultoria financeira.svg"
+          href="https://astro.build/integrations/"
+          title="Consultoria Financeira"
+          body="Melhorias que afetam os negócios e permanecem com eles nos próximos anos."
+        />
+        <Card
+          img="/revisão tributaria.svg"
+          href="https://astro.build/themes/"
+          title="Revisão Tributária"
+          body="Com a nossa consultoria você poderá reduzir sua carga tributária"
+        />
+        <Card
+          img="/regularização da empresa.svg"
+          href="https://astro.build/chat/"
+          title="Regularização de Empresa"
+          body="Regularize sua Empresa com nossa contabilidade, nosso setor atenderá sua empresa de maneira personalizada."
+        />
+      </ul>
+    </section>
+    <section id="business" class="business">
+      <div class="business-text">
+        <h2>
+          Contabilidade <span class="text-gradient-dark"> especializada</span>
+        </h2>
+        <p class="subtitle">
+          Somos experts em contabilidade online!<br /> Entre em contato e consulte
+          valores.
+        </p>
+      </div>
+      <div class="business-grid">
+        <img
+          data-position="0"
+          class="business-img"
+          src="/comércio.png"
+          alt="business"
+        />
+        <img
+          data-position="1"
+          class="business-img"
+          src="/startup.png"
+          alt="business"
+        />
+        <img
+          data-position="2"
+          class="business-img"
+          src="/serviços.png"
+          alt="business"
+        />
+        <ul>
+          <li data-category="comércio">
+            <img class="business-grid-img" src="/comércio.svg" alt="business" />
+            <div>
+              <h3>Comércio</h3>
+              <p>
+                Ter um comércio demanda de muito tempo e para facilitar sua vida
+                e poupar o seu tempo, o ideal é contratar um escritório de
+                contabilidade que cuide de toda parte burocrática. <br />
+              </p>
+            </div>
+          </li>
+          <li data-category="startup">
+            <img class="business-grid-img" src="/startup.svg" alt="business" />
+            <div>
+              <h3>Startups</h3>
+              <p>
+                Está iniciando no ramo de Startup? Comece do jeito correto,
+                iniciando com um bom serviço contábil para lhe auxiliar desde a
+                abertura até a manutenção do seu negócio. <br />
+              </p>
+            </div>
+          </li>
+          <li data-category="serviços">
+            <img class="business-grid-img" src="/serviços.svg" alt="business" />
+            <div>
+              <h3>Prestadores de Serviços</h3>
+              <p>
+                Trabalhamos com emissão de notas, movimentação bancária, emissão
+                de guias e tudo que for importante pra você que é um prestador
+                de serviços e precisa ter mais facilidade no seu dia a dia.<br
+                />
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="steps" class="steps">
+      <div class="steps-text">
+        <h2>
+          Abra sua empresa com<br /><span class="text-gradient">
+            facilidade e segurança
+          </span>
+        </h2>
+        <p class="subtitle">
+          Todas as dúvidas cuidadosamente respondidas por contadores
+          especialistas.
+        </p>
+      </div>
+      <div class="steps-grid">
+        <div>
+          <h2>1</h2>
+          <h3>Cadastro</h3>
+          <p>Deixe seus dados para que nossa equipe entre em contato</p>
+        </div>
+        <div>
+          <h2>2</h2>
+          <h3>Documentos</h3>
+          <p>Envie a documentação solicitada, e assine os contratos</p>
+        </div>
+        <div>
+          <h2>✓</h2>
+          <h3>Seja bem-vindo</h3>
+          <p>Agora a contabilidade da sua empresa está em boas mãos</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact hidden">
+      <div class="contact-text">
+        <h2>
+          Sempre inovando<br /><span class="text-gradient">
+            no atendimento!</span
+          >
+        </h2>
+        <p>
+          Somos experts em contabilidade online! Entre em contato e consulte
+          valores.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <img class="contact-img" src="/favicon.svg" alt="contact" />
+          <h3>Guaratinguetá</h3>
+          <a href="tel:+55 (12) 3122-5576 ">+55 (12) 3122-5576</a>
+          <a href="mailto:contabilcosta.com.br">
+            contato@contabilcosta.com.br
+          </a>
+          <address>
+            Rua Domingos Rodrigues Alves, 425, Centro, Guaratinguetá – SP
+          </address>
+        </div>
+        <div>
+          <img class="contact-img" src="/favicon.svg" alt="contact" />
+          <h3>Pindamonhangaba</h3>
+          <a href="tel:+55 (12) 3522-9571 ">+55 (12) 3522-9571</a>
+          <a href="mailto:contabilcosta.com.br">
+            contato@contabilcosta.com.br
+          </a>
+          <address>
+            Rua Marechal Deodoro da Fonseca, 173, Centro, Pindamonhangaba – SP
+          </address>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+      <div class="testimonials-text">
+        <h2>
+          O que dizem<span class="text-gradient-dark"> sobre nós</span>
+        </h2>
+        <p class="subtitle">
+          Somos experts em contabilidade online! Entre em contato e consulte
+          valores.
+        </p>
+      </div>
+      <Slide />
+    </section>
+    <section id="certificado" class="certificado">
+      <div class="certificado-box">
+        <div class="certificado-text">
+          <h2>Certificado <span class="text-gradient"> Digital</span></h2>
+          <p>
+            O Certificado Digital é a identidade digital da pessoa física e
+            jurídica no meio eletrônico. Ele garante autenticidade,
+            confidencialidade, integridade e não repúdio nas operações que são
+            realizadas por meio dele, atribuindo validade jurídica.
+          </p>
+          <Button title="Get Started" link="https://astro.build" />
+        </div>
+        <img src="/favicon.svg" alt="logo" />
+      </div>
+    </section>
+  </main>
+  <footer>
+    <img src="/logo dark completo.svg" alt="Astro logo" />
+    <div>
+      <h3>Guaratinguetá</h3>
+      <a href="tel:+55 (12) 3122-5576 ">+55 (12) 3122-5576</a>
+      <a href="mailto:contabilcosta.com.br"> contato@contabilcosta.com.br </a>
+      <address>
+        Rua Domingos Rodrigues Alves, 425, Centro, Guaratinguetá – SP
+      </address>
+    </div>
+    <div>
+      <h3>Pindamonhangaba</h3>
+      <a href="tel:+55 (12) 3522-9571 ">+55 (12) 3522-9571</a>
+      <a href="mailto:contabilcosta.com.br"> contato@contabilcosta.com.br </a>
+      <address>
+        Rua Marechal Deodoro da Fonseca, 173, Centro, Pindamonhangaba – SP
+      </address>
+    </div>
+    <div>
+      <h3>Redes Sociais</h3>
+      <a href="https://www.facebook.com/contabilcosta" target="_blank">
+        <img src="/facebook.svg" alt="facebook" />
+      </a>
+      <a href="https://www.instagram.com/contabilcosta" target="_blank">
+        <img src="/instagram.svg" alt="instagram" />
+      </a>
+      <a href="https://www.linkedin.com/company/contabilcosta" target="_blank">
+        <img src="/linkedin.svg" alt="linkedin" />
+      </a>
+    </div>
+  </footer>
+  <style>
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: -webkit-fill-available;
+      padding: 3svw 4svw;
+      position: fixed;
+      transition: all 0.3s;
+      z-index: 100;
+    }
+    nav .logo {
+      height: 2.2svw;
+    }
+    nav .nav-links {
+      display: flex;
+      gap: 4svw;
+    }
+    nav .nav-links a {
+      font-size: clamp(18px, 1.2svw, 32px);
+      font-weight: 500;
+      color: var(--lighter);
+      text-decoration: none;
+    }
+    nav .nav-links a:hover {
+      color: var(--accent-light);
+    }
+    main {
+      color: var(--dark);
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    .hero {
+      background: var(--accent-gradient-dark);
+      padding: 6svw 4svw 0 4svw;
+      display: flex;
+      place-items: center;
+      gap: 1svw;
+      height: 90svh;
+    }
+    .hero-text {
+      width: 51svw;
+      display: flex;
+      flex-direction: column;
+      color: var(--lighter);
+      gap: 2svw;
+    }
+    .hero-text p {
+      font-size: clamp(24px, 1.8svw, 40px);
+      margin-bottom: 2svw;
+      color: var(--lighter);
+    }
+    .hero img {
+      position: relative;
+      height: -webkit-fill-available;
+    }
+    .partners {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4svw 4svw;
+      margin-bottom: 4svw;
+      background: var(--accent);
+    }
+    .partners .logo {
+      height: 2.2svw;
+      opacity: 0.7;
+    }
+    .benefits {
+      padding: 4svw 4svw;
+    }
+    .benefits h2 {
+      width: 30svw;
+      margin-bottom: 5vw;
+    }
+    .business {
+      padding: 6svw 4svw 8svw;
+    }
+    .business-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1svw;
+      text-align: center;
+      margin: 0 auto;
+      width: 33svw;
+    }
+    .business .business-grid {
+      display: flex;
+      gap: 6svw;
+      margin-top: 7svw;
+    }
+    .business .business-grid .business-img {
+      width: 40svw;
+      align-self: flex-end;
+      border-radius: 4svw;
+    }
+    img[data-position] {
+      display: none;
+    }
+    img[data-position="0"] {
+      display: block;
+    }
+    .business .business-grid ul {
+      display: flex;
+      flex-direction: column;
+      gap: 3svw;
+    }
+    .business .business-grid ul li {
+      list-style: none;
+      display: flex;
+      gap: 0.5svw;
+      padding-bottom: 3svw;
+      border-bottom: 0.1svw solid var(--gray);
+    }
+    .business .business-grid ul li div {
+      padding-top: 0.4svw;
+    }
+    .business .business-grid ul li .business-grid-img {
+      height: 4svw;
+      padding: 0.6svw;
+      margin-right: 1svw;
+      background: var(--lighter);
+      border-radius: 1svw;
+      border: 0.12svw solid transparent;
+      transition: all 0.3s;
+      filter: hue-rotate(280deg);
+    }
+    .business .business-grid ul li:hover .business-grid-img {
+      border: 0.12svw solid var(--accent-dark);
+    }
+
+    .business .business-grid ul li h3 {
+      margin-bottom: 0.5svw;
+    }
+    .contact {
+      background: var(--accent-gradient-dark);
+      padding: 6svw 4svw;
+      color: var(--lighter);
+    }
+    .contact-grid {
+      display: flex;
+      justify-content: center;
+      gap: 2svw;
+      padding: 4svw 4svw;
+    }
+    .contact-grid div {
+      display: flex;
+      flex-direction: column;
+      background: var(--lighter);
+      border-radius: 2svw;
+      padding: 3svw;
+      color: var(--dark);
+      box-shadow: 0svw 0.2svw 1svw -0.4svw var(--accent-dark);
+    }
+    .contact-grid div img {
+      align-self: center;
+      width: 6svw;
+    }
+
+    .contact p {
+      margin-top: 1svw;
+      color: var(--lighter);
+    }
+    .steps {
+      background: var(--accent-gradient-dark);
+      padding: 8svw 4svw;
+      color: var(--lighter);
+      text-align: center;
+    }
+    .steps-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2svw;
+    }
+    .steps p {
+      max-width: 30svw;
+      margin: 1svw 0 2svw 0;
+      color: var(--lighter);
+    }
+    .steps-grid {
+      position: relative;
+      display: flex;
+      place-items: center;
+      place-content: center;
+      gap: 2svw;
+      padding: 0svw 4svw;
+    }
+    .steps-grid::before {
+      content: "";
+      height: 0.15svw;
+      width: 60svw;
+      background: var(--accent-light);
+      position: absolute;
+      top: 7svw;
+      filter: opacity(0.3);
+      z-index: 0;
+    }
+    .steps-grid div {
+      display: flex;
+      flex-direction: column;
+      place-content: center;
+      place-items: center;
+      padding: 3svw;
+      color: var(--dark);
+      z-index: 10;
+    }
+    .steps-grid h2 {
+      margin: 1svw 0;
+      background: var(--accent-darker);
+      color: var(--accent-light);
+      width: 6svw;
+      padding: 2.9svw 0;
+      border: 0.15svw solid var(--accent-light);
+      border-radius: 10svw;
+      line-height: 0;
+    }
+    .steps-grid h3 {
+      color: var(--accent-light);
+    }
+    .testimonials {
+      padding: 8svw 4svw;
+    }
+    .testimonials .testimonials-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1svw;
+      text-align: center;
+      margin: 0 auto;
+      width: 33svw;
+      margin-bottom: 4svw;
+    }
+
+    .certificado {
+      position: relative;
+      padding: 2svw 4svw;
+    }
+    .certificado-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2svw;
+      padding: 3svw 8svw;
+      border-radius: 2svw;
+      color: var(--lighter);
+      background: var(--accent-gradient-dark);
+    }
+    .certificado-box .certificado-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1svw;
+    }
+    .certificado-box .certificado-text h2 {
+      font-size: clamp(38px, 3svw, 86px);
+    }
+    .certificado-box .certificado-text p {
+      font-size: clamp(18px, 1.2svw, 32px);
+      color: var(--lighter);
+      margin-bottom: 2svw;
+    }
+    .certificado-box img {
+      width: 20svw;
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 4em;
+      margin-top: -10svw;
+      padding: 16svw 4svw;
+      background: var(--accent-darker);
+      color: var(--light);
+      z-index: -1;
+    }
+
+    footer img {
+      width: 20rem;
+    }
+    footer a {
+      color: var(--accent-light);
+      text-decoration: none;
+    }
+    footer a:hover,
+    footer a:focus {
+      text-decoration: underline;
+    }
+    footer div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2svw;
+    }
+    .text-gradient {
+      background-image: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      background-position: 0%;
+    }
+    .text-gradient-dark {
+      background-image: var(--accent-gradient-dark);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 400%;
+      background-position: 0%;
+    }
+    .link-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(14ch, 1fr));
+      gap: 1svw;
+    }
+  </style>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      let nav = document.querySelector("nav");
+      if (window.scrollY > 0) {
+        nav.style.padding = "1svw 4svw";
+        nav.style.backgroundColor = "var(--accent)";
+        nav.style.boxShadow = "0 1svw 1svw -1.5vw hsl(187, 61%, 10%)";
+      } else {
+        nav.style.padding = "2svw 4svw";
+        nav.style.backgroundColor = "transparent";
+        nav.style.boxShadow = "none";
+      }
+    });
+
+    const categoryImages = {
+      comércio: "0",
+      startup: "1",
+      serviços: "2",
+    };
+    function showImage(event) {
+      const img = document.querySelector(
+        `img[data-position="${categoryImages[event.target.dataset.category]}"]`
+      );
+      const imgs = document.querySelectorAll("img[data-position]");
+      if (
+        event.type === "mouseleave" &&
+        !document.querySelector("li[data-category]:hover")
+      ) {
+        imgs.forEach((i) => (i.style.display = "none"));
+        img.style.display = "block";
+      } else {
+        imgs.forEach((i) => (i.style.display = i === img ? "block" : "none"));
+      }
+    }
+
+    document.querySelectorAll("li[data-category]").forEach((li) => {
+      li.addEventListener("mouseenter", showImage);
+      li.addEventListener("mouseleave", showImage);
+    });
+  </script>
+</Layout>
